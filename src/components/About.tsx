@@ -19,11 +19,11 @@ const About = () => {
                 </div>
 
                 <div className="bodyA">
-                    <p>
+                    <p className='self-description'>
                         I am a passionate software developer with a focus on building scalable, efficient and user-centric solutions.
                     </p>
                     <br/>
-                    <p>
+                    <p className='self-description'>
                         With a background in MERN STACK, I bring creative problem-solving and meticulous attention to detail to every project I undertake.
                     </p>
                 </div>

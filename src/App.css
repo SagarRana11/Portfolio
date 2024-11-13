@@ -57,6 +57,7 @@ h3 {
 
 .landing-page {
     margin-top: 50px;
+    padding: 5px;
     max-width: 1280px;
     display: flex;
     flex-direction: column;
@@ -114,6 +115,11 @@ h3 {
     padding: 0px;
 }
 
+.self-description {
+    font-size: 17px;
+    font-weight: 700;
+}
+
 .social-links {
     display: flex;
     width: 100%;
@@ -131,5 +137,66 @@ h3 {
         @media screen and (min-width: 400px) {
             gap: 2rem;
         }
+    }
+}
+
+
+/* skills */
+
+.skills {
+    text-align: center;
+}
+
+.section-margin {
+    margin-top: 8rem;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.body img {
+    height: 100px;
+}
+
+.body div {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills .body .img {
+    height: 8rem;
+    aspect-ratio: 1 / 1;
+}
+
+.waviy {
+    position: relative;
+    font-size: 2em;
+    color: #161515;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
