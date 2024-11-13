@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+* {
+    color: var(--gray-light);
+}
+
+:root {
+    --black: #1c1c1c;
+    --gray: #7e7e7e;
+    --gray-light: #e4e4e4;
+    --red: #b30000;
+    --font-size-base: 1rem;
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --border-radius: 10px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+    font-size: var(--font-size-base);
+    background-color: #0a0a0a;
+    margin: 0;
+}
+
+a {
+    color: var(--gray-light);
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-size: var(--font-size-md);
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.landing-page {
+    margin-top: 50px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.landing-page div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.landing-page h1,
+.landing-page h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-id {
+    display: flex;
+    width: 100%;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.image-container {
+    & img {
+        width: 20vw;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 15px rgb(214, 219, 193));
+    }
+    @media screen and (max-width: 920px) {
+        display: none;
+        /* Corrected typo from "dislay" to "display" */
+    }
+}
+
+.bodyA {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    /* margin-top: 100px; */
+}
+
+.bodyA p {
+    text-align: start;
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3rem;
+}
+
+.social-links div a img {
+    width: 60px;
+}
+
+.name-container {
+    & .social-links {
+        @media screen and (min-width: 400px) {
+            gap: 2rem;
+        }
+    }
+}
